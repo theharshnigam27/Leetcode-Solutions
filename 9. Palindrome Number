@@ -1,0 +1,15 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+        String s = Integer.toString(x);     
+        int idx=0;
+        while(idx<s.length()/2){
+            if(s.charAt(idx)!=s.charAt(s.length()-idx-1)) return false;
+            idx++;
+        }
+        return true;
+    }
+}
+// Approach 
+// First convert the number to the string
+// Then apply concept of the string 
+// Then you get final result
